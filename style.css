@@ -1,48 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap");
 
 body {
-  background-color: #02101c;
+  background-color: #00101d;
   font-family: Quattrocento;
   margin: 0;
   padding: 0;
 }
 
-.cardContainer {
+.header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-  height: 100vh;
 }
 
-.card {
-  width: auto;
-  background-color: #02101c;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.header img {
+  width: 180px;
+  height: auto;
+}
+
+.headerIntroduction {
+  color: #feefd4;
+  margin-top: 75px;
+}
+
+/* HEADER */
+
+.CardContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between cards */
+  margin-top: 50px;
+  margin-bottom: 150px;
 }
 
-.card img {
-  max-width: 100%;
-  height: 150px;
+.Card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 2px solid; /* Border style and width */
+  width: 200px;
+  height: 300px;
+  color: #feefd4;
 }
 
-.headerCard {
-  color: #eef3ff;
+.Card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: -20px;
-}
+/* FOOTER */
 
-.User {
-  color: #dbcaac;
-  margin: 0 5px;
+#footer {
+  color: #feefd4;
+  border: 2px solid;
+  justify-content: center;
 }
