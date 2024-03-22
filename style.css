@@ -3,8 +3,8 @@
 body {
   background-color: #02101c;
   font-family: Quattrocento;
-  margin: 0; /* Remove default body margin */
-  padding: 0; /* Remove default body padding */
+  margin: 0;
+  padding: 0;
 }
 
 .cardContainer {
@@ -16,14 +16,14 @@ body {
 }
 
 .card {
-  width: auto; /* Adjusted to fit content */
+  width: auto;
   background-color: #02101c;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
-  flex-direction: column; /* Align items in a column */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column;
+  align-items: center;
 }
 
 .card img {
@@ -32,17 +32,12 @@ body {
 }
 
 .headerCard {
-  margin-top: 0; /* Adjusted margin for better alignment */
-  color: #eef3ff; /* Adjusted text color */
-}
-.text {
-  display: flex;
-  flex-direction: row; /* Change the direction to row */
-  align-items: center; /* Align items along the cross axis (vertically in this case) */
-  margin-top: 10px; /* Add margin between the image and the user names */
+  margin-top: 0;
+  color: #eef3ff;
 }
 
 .User {
   color: #b18054;
-  margin: 0 5px; /* Adjusted margin for user names */
+  margin: 0 5px;
+  flex-direction: row;
 }
