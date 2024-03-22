@@ -1,0 +1,29 @@
+body {
+  background-color: #c6d4ff;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+}
+
+.card {
+  width: 200px;
+  background-color: #a4b6fd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #eef3ff;
+}
