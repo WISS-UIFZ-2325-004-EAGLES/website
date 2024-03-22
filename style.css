@@ -16,14 +16,18 @@ body {
 }
 
 .card {
-  width: auto;
+  width: auto; /* Adjusted to fit content */
   background-color: #02101c;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+}
+
+.User {
+  display: flex;
 }
 
 .card img {
@@ -39,5 +43,4 @@ body {
 .User {
   color: #b18054;
   margin: 0 5px;
-  flex-direction: row;
 }
