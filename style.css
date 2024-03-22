@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap");
+
 body {
-  background-color: #c6d4ff;
+  background-color: #02101c;
+  font-family: Quattrocento;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
 }
 
-.card-container {
+.cardContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,19 +16,33 @@ body {
 }
 
 .card {
-  width: 200px;
-  background-color: #a4b6fd;
+  width: auto; /* Adjusted to fit content */
+  background-color: #02101c;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
 }
 
 .card img {
   max-width: 100%;
+  height: 150px;
 }
 
-.card h2 {
-  margin-top: 10px;
-  font-size: 18px;
-  color: #eef3ff;
+.headerCard {
+  margin-top: 0; /* Adjusted margin for better alignment */
+  color: #eef3ff; /* Adjusted text color */
+}
+.text {
+  display: flex;
+  flex-direction: row; /* Change the direction to row */
+  align-items: center; /* Align items along the cross axis (vertically in this case) */
+  margin-top: 10px; /* Add margin between the image and the user names */
+}
+
+.User {
+  color: #b18054;
+  margin: 0 5px; /* Adjusted margin for user names */
 }
