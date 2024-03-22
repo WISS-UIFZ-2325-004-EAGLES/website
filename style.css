@@ -46,6 +46,15 @@ body {
   object-fit: cover;
 }
 
+.Card h2 {
+  margin-bottom: 0px;
+}
+
+.Card h3 {
+  margin: 0;
+  margin-top: 3px;
+}
+
 /* FOOTER */
 
 #footer {
