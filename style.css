@@ -164,3 +164,80 @@ a {
 .logos a {
   margin-right: 10px;
 }
+
+/* CSS-Code für die Bubbles und den Footer */
+.footer {
+  z-index: 1;
+  --footer-background: #ED5565;
+  display: grid;
+  position: relative;
+  grid-area: footer;
+  min-height: 12rem;
+}
+
+.footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: var(--footer-background);
+  filter: url("#blob");
+}
+
+.footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--footer-background);
+  border-radius: 100%;
+  animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
+             bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+}
+
+.footer .content {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 4rem;
+  padding: 2rem;
+  background: var(--footer-background);
+}
+
+.footer .content a,
+.footer .content p {
+  color: #F5F7FA;
+  text-decoration: none;
+}
+
+.footer .content b {
+  color: white;
+}
+
+.footer .content p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.footer .content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .content > div > div {
+  margin: 0.25rem 0;
+}
+
+.footer .content > div > div > * {
+  margin-right: 0.5rem;
+}
+
+.footer .content .image {
+  align-self: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.25rem 0;
+  background-size: cover;
+  background-position: center;
+}

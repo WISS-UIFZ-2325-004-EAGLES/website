@@ -11,7 +11,7 @@
     <title>Eagles</title>
 </head>
   <header class="top-header">
-    <img src="img/Logo.jpeg" alt="Logo"> <!-- Replace with the actual path to your logo -->
+    <img src="img/Logo.png" alt="Logo"> <!-- Replace with the actual path to your logo -->
     <h1>WISS EAGLES</h1>
   </header>
 <body>
@@ -37,7 +37,7 @@
           <div class="cardtwo">
               <img src="/img/kei.jpg" alt="kei">
               <div class="cardcontent"> <!-- Added class for card content -->
-                  <h2>Kei Hoang Khan</h2>
+                  <h2>Hoang Khang "Kei" Lê</h2>
                   <p>From retail to bakery, and now entering the IT industry, my unconventional journey has instilled in me a strong work ethic, and a passion for continuous learning. I am eager to apply my skills and knowledge in an innovative environment.  </p>
                   <div class="logos">
                     <a href="https://www.instagram.com/ibrazqrj" target="_blank" class="logo">
@@ -72,5 +72,31 @@
           </div>
       </main>
     </div>
+    <div class="footer">
+      <div class="bubbles">
+        <script>
+          for (var i = 0; i < 128; i++) {
+              var bubble = document.createElement('div');
+              bubble.classList.add('bubble');
+              bubble.style.setProperty('--size', (2 + Math.random() * 4) + 'rem');
+              bubble.style.setProperty('--distance', (6 + Math.random() * 4) + 'rem');
+              bubble.style.setProperty('--position', (-5 + Math.random() * 110) + '%');
+              bubble.style.setProperty('--time', (2 + Math.random() * 2) + 's');
+              bubble.style.setProperty('--delay', (-1 * (2 + Math.random() * 2)) + 's');
+              document.querySelector('.bubbles').appendChild(bubble);
+          }
+      </script>      
+      </div>
+      <div class="content">
+          <div>
+              <div>
+                  <b>made with love.</b>
+          </div>
+          <div>
+              <a class="image" href="https://codepen.io/z-" target="_blank" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg')"></a>
+              <p>©2024 EAGLES</p>
+          </div>
+      </div>
+  </div>  
 </body>
 </html>
