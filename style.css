@@ -1,39 +1,44 @@
+/* Importieren von Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap");
 
+/* Grundlegende Stile für den gesamten Körper der Webseite */
 body {
-  background-color: #02101c;
-  font-family: Quattrocento;
-  margin: 0;
-  padding: 0;
+  background-color: #02101c; /* Hintergrundfarbe */
+  font-family: 'Quattrocento', sans-serif; /* Verwendung von Quattrocento als primäre Schriftart */
+  margin: 0; /* Kein Außenabstand */
+  padding: 0; /* Kein Innenabstand */
 }
 
+/* Stile für den Kopfbereich */
 .top-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row; /* This will arrange the logo and text horizontally */
+  flex-direction: row;
 }
 
 .top-header img {
-  width: 100px; /* Adjust as needed */
+  width: 100px;
   height: auto;
-  margin-right: 20px; /* This will add some space between the logo and the text */
+  margin-right: 20px; /* Abstand zwischen Logo und Text */
 }
 
 .top-header h1 {
-  font-family: 'Roboto', sans-serif;
-  color: #dbcaac; /* Adjust as needed */
+  font-family: 'Roboto Slab', sans-serif; /* Verwendung von Roboto Slab für den Haupttitel */
+  color: #dbcaac; /* Farbe des Haupttitels */
 }
 
+/* Container für Karten */
 .cardContainer {
-  display: flex;
-  flex-wrap: wrap; /* Hinzugefügt: Umbruch der Karten */
+  display: grid; /* Änderung: Verwenden von Grid-Layout */
+  grid-template-columns: repeat(2, 1fr); /* Änderung: 2 Spalten mit gleicher Breite */
+  grid-gap: 20px; /* Abstand zwischen den Karten */
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  height: 100vh;
+  height: 100vh; /* Volle Höhe des Viewports */
 }
 
+/* Stile für Karten */
 .card {
   background-color: #02101c;
   border-radius: 8px;
@@ -47,16 +52,19 @@ body {
   padding: 20px;
 }
 
+/* Bildstile */
 .card img {
   max-width: 100%;
   height: auto;
 }
 
+/* Header-Stile */
 .headerCard {
   margin-top: 0;
   color: #eef3ff;
 }
 
+/* Stile für Textelemente */
 .text {
   display: flex;
   flex-direction: row;
@@ -64,20 +72,23 @@ body {
   margin-top: 10px;
 }
 
+/* Stile für Benutzernamen */
 .User {
   color: #b18054;
   margin: 0 5px;
 }
 
+/* Hauptbereichsstile */
 .main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px;
-    font-family: 'Roboto', sans-serif;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  font-family: 'Roboto Slab', sans-serif; /* Verwendung von Roboto Slab für den Hauptinhalt */
+}
 
+/* Kartenstil */
 .cardtwo {
   width: 24rem;
   height: 36rem;
@@ -144,12 +155,12 @@ a {
   opacity: 0.3;
 }
 
+/* Stile für Logos */
 .logos {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: row; /* Änderung: Stellen Sie sicher, dass die Richtung von links nach rechts ist */
+  justify-content: flex-start; /* Änderung: Starten Sie die Ausrichtung von links */
+  align-items: center;
 }
 
 .logos .logo {
@@ -163,81 +174,4 @@ a {
 
 .logos a {
   margin-right: 10px;
-}
-
-/* CSS-Code für die Bubbles und den Footer */
-.footer {
-  z-index: 1;
-  --footer-background: #ED5565;
-  display: grid;
-  position: relative;
-  grid-area: footer;
-  min-height: 12rem;
-}
-
-.footer .bubbles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1rem;
-  background: var(--footer-background);
-  filter: url("#blob");
-}
-
-.footer .bubbles .bubble {
-  position: absolute;
-  left: var(--position, 50%);
-  background: var(--footer-background);
-  border-radius: 100%;
-  animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
-             bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
-  transform: translate(-50%, 100%);
-}
-
-.footer .content {
-  z-index: 2;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-gap: 4rem;
-  padding: 2rem;
-  background: var(--footer-background);
-}
-
-.footer .content a,
-.footer .content p {
-  color: #F5F7FA;
-  text-decoration: none;
-}
-
-.footer .content b {
-  color: white;
-}
-
-.footer .content p {
-  margin: 0;
-  font-size: 0.75rem;
-}
-
-.footer .content > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.footer .content > div > div {
-  margin: 0.25rem 0;
-}
-
-.footer .content > div > div > * {
-  margin-right: 0.5rem;
-}
-
-.footer .content .image {
-  align-self: center;
-  width: 4rem;
-  height: 4rem;
-  margin: 0.25rem 0;
-  background-size: cover;
-  background-position: center;
 }
